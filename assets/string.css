@@ -1,0 +1,79 @@
+body {
+  font-size: 25px;
+}
+
+.quote::after {
+  content: "Quote";
+}
+
+.str-index::after {
+  content: "5";
+}
+
+.str-insert::after {
+  content: "Str-InsertInsert-Elements";
+}
+
+.str-length::after {
+  content: "2";
+}
+
+.str-slice::after {
+  content: "lo Sa";
+}
+
+.to-lower-case::after {
+  content: "lower case element";
+}
+
+.to-upper-case::after {
+  content: "UPPER CASE ELEMENT";
+}
+
+.unique::after {
+  content: "uaq1bjz";
+}
+
+.unquote::after {
+  content: "Hi Sass";
+}
+
+.abs::after {
+  content: "20";
+}
+
+.ceil::after {
+  content: "16";
+}
+
+.comparable::after {
+  content: "true";
+}
+
+.floor::after {
+  content: "10";
+}
+
+.max::after {
+  content: "21";
+}
+
+.min::after {
+  content: "5";
+}
+
+.percentage::after {
+  content: "150%";
+}
+
+.random::after {
+  content: "15";
+}
+
+.random2::after {
+  content: "0.7004123352";
+}
+
+.round::after {
+  content: "14";
+}/*# sourceMappingURL=string.css.map */

@@ -1,0 +1,71 @@
+$p-size: 25px;
+
+body {
+  font-size: $p-size;
+}
+.quote::after {
+  content: quote($string: "Quote");
+}
+.str-index::after {
+  content: "" + str-index($string: "Str-Index", $substring: "I");
+}
+.str-insert::after {
+  content: str-insert(
+    $string: "Str-Insert",
+    $insert: "Insert-Elements",
+    $index: 11
+  );
+}
+.str-length::after {
+  content: "" + str-length($string: "Hi");
+}
+.str-slice::after {
+  content: str-slice("Hello Sass", 4, 8);
+}
+.to-lower-case::after {
+  content: to-lower-case($string: "Lower Case Element");
+}
+.to-upper-case::after {
+  content: to-upper-case($string: "Upper Case Element");
+}
+.unique::after {
+  content: "" + unique-id();
+}
+.unquote::after {
+  content: "" + unquote($string: "Hi Sass");
+}
+
+////***////
+
+.abs::after {
+  content: "" + abs($number: 20);
+}
+.ceil::after {
+  content: "" + ceil($number: 15.2);
+}
+.comparable::after {
+  content: "" + comparable($number1: 20, $number2: 2);
+}
+
+.floor::after {
+  content: "" + floor($number: 10.1);
+}
+
+.max::after {
+  content: "" + max(20, 5, 9, 21);
+}
+.min::after {
+  content: "" + min(20, 5, 9, 21);
+}
+.percentage::after {
+  content: "" + percentage($number: 1.5);
+}
+.random::after {
+  content: "" + random($limit: 15);
+}
+.random2::after {
+  content: "" + random();
+}
+.round::after {
+  content: "" + round($number: 14.2);
+}

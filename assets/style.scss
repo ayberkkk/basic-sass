@@ -1,0 +1,86 @@
+$primary-color: rgb(236, 236, 236);
+$font-family: "Helvetica Neue";
+$h1-font-size: 60px;
+$h1-font-color: rgb(119, 251, 233);
+$font-weight: 800;
+$other-font-family: "Courier New", Courier, monospace;
+$border-bottom: 1px solid rgba(255, 255, 255, 1);
+$h3-font-size: 80px;
+$param-size: 15px;
+$param-color: #387548;
+$transition: transition 0.4s;
+
+@import "reset";
+@import "color";
+
+@mixin h3-element() {
+  font-weight: $font-weight;
+  color: $h3-color;
+  font-family: $other-font-family;
+  font-size: $h3-font-size;
+}
+
+@mixin parameters($elem-size, $elem-weight) {
+  font-size: $elem-size;
+  font-weight: $elem-weight;
+}
+
+body {
+  background-color: $primary-color;
+  font-family: $font-family;
+}
+h1 {
+  font-size: $h1-font-size;
+  color: $h1-font-color;
+  border-bottom: $border-bottom;
+}
+p {
+  font-size: $h1-font-size;
+  $h1-font-color: rgb(119, 251, 0.1);
+  color: $h1-font-color;
+}
+
+div {
+  border-bottom: $border-bottom;
+  font: {
+    family: $other-font-family;
+  }
+  p {
+    font-weight: $font-weight;
+    color: $new-color;
+  }
+}
+
+h3 {
+  @include h3-element();
+  border-bottom: $border-bottom;
+}
+.elem {
+  p {
+    @include parameters(small, 500);
+  }
+}
+.btn {
+  border: 2px solid rgb(183, 171, 171);
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 200;
+  border-radius: 15px;
+}
+.success {
+  @extend .btn;
+  background-color: antiquewhite;
+  color: #387548;
+}
+.reset {
+  &:hover {
+    background-color: #fff;
+    color: #f00;
+  }
+  @extend .btn;
+  background-color: #f00;
+  color: #fff;
+  transition: $transition;
+}
+
+/////***/////

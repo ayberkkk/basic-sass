@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 15px;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
+  font-family: "Helvetica Neue";
+}
+
+h1 {
+  font-size: 60px;
+  color: rgb(119, 251, 233);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+p {
+  font-size: 60px;
+  color: rgb(119, 251, 0);
+}
+
+div {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+}
+div p {
+  font-weight: 800;
+  color: rgba(38, 40, 40, 0.99);
+}
+
+h3 {
+  font-weight: 800;
+  color: rgb(134, 134, 134);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.elem p {
+  font-size: small;
+  font-weight: 500;
+}
+
+.btn, .reset, .success {
+  border: 2px solid rgb(183, 171, 171);
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 200;
+  border-radius: 15px;
+}
+
+.success {
+  background-color: antiquewhite;
+  color: #387548;
+}
+
+.reset {
+  background-color: #f00;
+  color: #fff;
+  transition: transition 0.4s;
+}
+.reset:hover {
+  background-color: #fff;
+  color: #f00;
+}/*# sourceMappingURL=style.css.map */
